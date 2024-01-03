@@ -44,6 +44,8 @@ Optional:
   * [python-systemd package](https://www.freedesktop.org/software/systemd/python-systemd/index.html)
 - [dnspython](http://www.dnspython.org/)
 - [pyasyncore](https://pypi.org/project/pyasyncore/) and [pyasynchat](https://pypi.org/project/pyasynchat/) (normally bundled-in within fail2ban, for python 3.12+ only)
+- [geoiplookup](https://linux.die.net/man/1/geoiplookup)
+- [mmdblookup](https://maxmind.github.io/libmaxminddb/mmdblookup.html)
 
 
 To install:

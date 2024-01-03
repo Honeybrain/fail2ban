@@ -111,6 +111,7 @@ class JailReader(ConfigReader):
 		"ignorecommand": ["string", None],
 		"ignoreself": ["bool", None],
 		"ignoreip": ["string", None],
+		"ignoregeo": ["string", None],
 		"ignorecache": ["string", None],
 		"filter": ["string", ""],
 		"logtimezone": ["string", None],
@@ -279,6 +280,8 @@ class JailReader(ConfigReader):
 					logSys.warning(msg)
 			elif opt == "ignoreip":
 				stream.append(["set", self.__name, "addignoreip"] + splitwords(value))
+			elif opt == "ignoregeo":
+				stream.append(["set", self.__name, "addignoregeo"] + splitwords(value))
 			elif opt not in JailReader._ignoreOpts:
 				stream.append(["set", self.__name, opt, value])
 		# consider options order (after other options):
